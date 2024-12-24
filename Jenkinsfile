@@ -56,7 +56,7 @@ pipeline {
 
 		stage ('Deploy Image to Docker Hub') {
         		    steps {
-                        bat 'docker login -u -p
+                        bat 'docker login '
                         bat 'docker push recipe-demo:latest'
         		    }
         		}
